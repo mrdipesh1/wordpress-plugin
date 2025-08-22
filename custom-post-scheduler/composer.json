@@ -1,0 +1,19 @@
+{
+    "name": "mrdipesh/custom-post-scheduler",
+    "description": "A plugin that creates Custom Post Type, Taxonomies and schedule the post.",
+    "type": "project",
+    "license": "GPL",
+    "autoload": {
+        "psr-4": {
+            "Mrdipesh\\CPS\\": "./inc" 
+        }
+    },
+    "authors": [
+        {
+            "name": "Dipesh Adhikari",
+            "email": "0dipesh.adhikari@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
