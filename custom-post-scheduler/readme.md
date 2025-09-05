@@ -4,7 +4,7 @@
 **Tags:** Create custom post type, Create custom taxonomies, Automate Post Status, Automation sets post status as scheduled and publish, Automatic sets post status as expired  
 **Requires at least:** 4.7  
 **Tested up to:** 6.8
-**Stable tag:** 1.0.2
+**Stable tag:** 1.0.1
 **Requires PHP:** 7.0  
 **License:** GPLv2 or later  
 **License URI:** [https://www.gnu.org/licenses/gpl-2.0.html](https://www.gnu.org/licenses/gpl-2.0.html)
@@ -62,10 +62,6 @@ It simplifies content management by ensuring your posts automatically update the
 - Initial release with custom post type creation.
 - Added custom taxonomy support.
 - Automated post status: Scheduled → Published → Expired.
-
-### 1.0.2
-
-- Code simplified
 
 ---
 
