@@ -2,7 +2,7 @@
     <h1>Taxonomy Manager</h1>
     <?php settings_errors(); ?>
 
-    <ul class="nav nav-tabs">
+    <ul class="nav mrdipesh-cps-nav-tabs">
         <li class="<?php echo !isset($_POST["edit_taxonomy"]) ? 'active' : '' ?>"><a href="#tab-1">Your Taxonomies</a></li>
         <li class="<?php echo isset($_POST["edit_taxonomy"]) ? 'active' : '' ?>">
             <a href="#tab-2">

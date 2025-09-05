@@ -1,4 +1,3 @@
-import 'code-prettify';
 document.addEventListener('DOMContentLoaded', function() {
     console.log("URL: "+ mrdipeshcpsscript_vars.ajax_url) 
     console.log("page_id: "+ mrdipeshcpsscript_vars.page_id)

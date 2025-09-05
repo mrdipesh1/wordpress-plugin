@@ -11,7 +11,7 @@ Version: 1.0.1
 Author: Dipesh Adhikari
 Author URI: https://dipeshadhikari.com
 License: GPLv2 or later
-Text Domain: mrdipesh-plugin
+Text Domain: custom-post-scheduler
 */
 
 /*

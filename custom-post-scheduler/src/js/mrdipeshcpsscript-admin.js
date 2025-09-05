@@ -1,11 +1,12 @@
-import 'code-prettify';
+// import 'code-prettify';
 
 window.addEventListener("load", function() {
 
-	PR.prettyPrint();
+	// PR.prettyPrint();
 
 	// store tabs variables
-	var tabs = document.querySelectorAll("ul.nav-tabs > li");
+	var tabs = document.querySelectorAll("ul.mrdipesh-cps-nav-tabs > li");
+	console.log(tabs);
 
 	for (var i = 0; i < tabs.length; i++) {
 		tabs[i].addEventListener("click", switchTab);
@@ -13,8 +14,8 @@ window.addEventListener("load", function() {
 
 	function switchTab(event) {
 		event.preventDefault();
-
-		document.querySelector("ul.nav-tabs li.active").classList.remove("active");
+		console.log("tab clicked");
+		document.querySelector("ul.mrdipesh-cps-nav-tabs li.active").classList.remove("active");
 		document.querySelector(".tab-pane.active").classList.remove("active");
 
 		var clickedTab = event.currentTarget;

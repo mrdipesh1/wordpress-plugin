@@ -1,13 +1,14 @@
-# Custom Post Type & Post Status Automator
+# Custom Post Scheduler
 
 **Contributors:** [mrdipesh](https://profiles.wordpress.org/mrdipesh/)  
 **Tags:** Create custom post type, Create custom taxonomies, Automate Post Status, Automation sets post status as scheduled and publish, Automatic sets post status as expired  
 **Requires at least:** 4.7  
-**Tested up to:** 6.5.3  
+**Tested up to:** 6.8
 **Stable tag:** 1.0.1
 **Requires PHP:** 7.0  
 **License:** GPLv2 or later  
 **License URI:** [https://www.gnu.org/licenses/gpl-2.0.html](https://www.gnu.org/licenses/gpl-2.0.html)
+**Github** https://github.com/mrdipesh1/wordpress-plugin
 
 ---
 
