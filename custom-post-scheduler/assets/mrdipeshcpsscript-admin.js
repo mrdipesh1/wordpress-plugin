@@ -1,1 +1,26 @@
-window.addEventListener("load",(function(){for(var e=document.querySelectorAll("ul.mrdipesh-cps-nav-tabs > li"),t=0;t<e.length;t++)e[t].addEventListener("click",a);function a(e){e.preventDefault(),document.querySelector("ul.mrdipesh-cps-nav-tabs li.active").classList.remove("active"),document.querySelector(".tab-pane.active").classList.remove("active");var t=e.currentTarget,a=e.target.getAttribute("href");t.classList.add("active"),document.querySelector(a).classList.add("active")}}));
+window.addEventListener("load", function() {
+
+	// store tabs variables
+	var tabs = document.querySelectorAll("ul.mrdipesh-cps-nav-tabs > li");
+	console.log(tabs);
+
+	for (var i = 0; i < tabs.length; i++) {
+		tabs[i].addEventListener("click", switchTab);
+	}
+
+	function switchTab(event) {
+		event.preventDefault();
+		console.log("tab clicked");
+		document.querySelector("ul.mrdipesh-cps-nav-tabs li.active").classList.remove("active");
+		document.querySelector(".tab-pane.active").classList.remove("active");
+
+		var clickedTab = event.currentTarget;
+		var anchor = event.target;
+		var activePaneID = anchor.getAttribute("href");
+
+		clickedTab.classList.add("active");
+		document.querySelector(activePaneID).classList.add("active");
+
+	}
+
+});

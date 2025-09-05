@@ -38,7 +38,7 @@ It simplifies content management by ensuring your posts automatically update the
 
 ## 🛠️ Installation
 
-1. Upload the plugin folder to the `/wp-content/plugins/` directory, or install via the WordPress Plugins menu.
+1. Install via the WordPress Plugins menu.
 2. Activate the plugin through the **Plugins** menu in WordPress.
 3. Configure your custom post type and automation settings from the plugin options page.
 4. Create your Custom post types and Taxonomies.

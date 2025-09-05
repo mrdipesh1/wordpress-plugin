@@ -1,16 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
-    console.log("URL: "+ mrdipeshcpsscript_vars.ajax_url) 
-    console.log("page_id: "+ mrdipeshcpsscript_vars.page_id)
     jQuery.ajax({
-        url: mrdipeshcpsscript_vars.ajax_url, 
+        url: mrdipesh_cpsscript_vars.ajax_url, 
         type: 'POST',
         data: {
             action: 'overlayExpired',
-            page_id: mrdipeshcpsscript_vars.page_id
+            page_id: mrdipesh_cpsscript_vars.page_id,            
+            nonce: mrdipesh_cpsscript_vars.nonce
         },
         success: function(response) {
             var response = eval(response);
-            console.log("response: "+ response) 
             var status = response.data.status;
             if(status){
                 mrdipeshcpsscript_addExpiredOverlay()

@@ -49,7 +49,7 @@ class CustomPostTypeController extends BaseController
 		$this->storeCustomPostTypes();
 
 		if (!empty($this->custom_post_types)) {
-			add_action('init', array($this, 'registerCustomPostTypes'));
+			add_action('init', array($this, 'mrdipesh_cps_registerCustomPostTypes'));
 		}
 	}
 
@@ -221,7 +221,7 @@ class CustomPostTypeController extends BaseController
 		}
 	}
 
-	public function registerCustomPostTypes()
+	public function mrdipesh_cps_registerCustomPostTypes()
 	{
 		// print_r($this->custom_post_types);
 		// exit;

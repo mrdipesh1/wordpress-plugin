@@ -1,3 +1,4 @@
+<?php  if ( !defined( 'ABSPATH' ) ) exit; ?>
 <div class="wrap">
 	<h1>Custom Post Scheduler Plugin</h1>
 	<?php settings_errors(); ?>

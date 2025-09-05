@@ -36,7 +36,7 @@ class BaseController
 
 		return isset($option[$key]) ? $option[$key] : false;
 	}
-	public function getTimestamp()
+	public function mrdipesh_cps_getTimestamp()
 	{
 		return strtotime(date_i18n('Y-m-d H:i:s'));
 	}

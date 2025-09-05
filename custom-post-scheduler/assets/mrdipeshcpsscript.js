@@ -1,1 +1,34 @@
-function mrdipeshcpsscript_addExpiredOverlay(){if(document.body.classList.contains("expired")){var e=document.createElement("div");e.classList.add("expired-overlay");var s=document.createElement("div");s.classList.add("diagonal-text"),s.innerHTML="EXPIRED",e.appendChild(s),document.body.appendChild(e)}}document.addEventListener("DOMContentLoaded",(function(){jQuery.ajax({url:mrdipeshcpsscript_vars.ajax_url,type:"POST",data:{action:"overlayExpired",page_id:mrdipeshcpsscript_vars.page_id},success:function(response){var response=eval(response),status=response.data.status;status&&mrdipeshcpsscript_addExpiredOverlay()},error:function(e,s,a){}})}));
+document.addEventListener('DOMContentLoaded', function() {
+    jQuery.ajax({
+        url: mrdipesh_cpsscript_vars.ajax_url, 
+        type: 'POST',
+        data: {
+            action: 'overlayExpired',
+            page_id: mrdipesh_cpsscript_vars.page_id,            
+            nonce: mrdipesh_cpsscript_vars.nonce
+        },
+        success: function(response) {
+            var response = eval(response);
+            var status = response.data.status;
+            if(status){
+                mrdipeshcpsscript_addExpiredOverlay()
+            }
+        },
+        error: function(xhr, status, error) { 
+        }
+    });
+});
+
+function mrdipeshcpsscript_addExpiredOverlay() {
+    if (document.body.classList.contains('expired')) {
+        var expiredOverlay = document.createElement('div');
+        expiredOverlay.classList.add('expired-overlay');
+        
+        var diagonalText = document.createElement('div');
+        diagonalText.classList.add('diagonal-text');
+        diagonalText.innerHTML = 'EXPIRED';
+        expiredOverlay.appendChild(diagonalText);
+        
+        document.body.appendChild(expiredOverlay);
+    }
+} 
